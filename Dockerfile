@@ -1,4 +1,4 @@
-FROM golang:1.14 AS build
+FROM golang:1.20 AS build
 
 ADD . /go/src/github.com/hikhvar/ts3exporter
 
@@ -12,10 +12,8 @@ RUN mkdir -p /rootfs/etc && \
     echo "nobody:*:100:100:::" > /rootfs/etc/passwd
 
 
-FROM scratch
-
+FROM alpine:3.18.0
 COPY --from=build --chown=100:100 /rootfs /
-
 USER 100:100
 EXPOSE 9189/tcp
 ENTRYPOINT ["/ts3exporter"]
