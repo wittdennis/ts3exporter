@@ -44,6 +44,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: setup QEMU
+        uses: docker/setup-qemu-action@v2
+
       - name: setup docker buildx
         uses: docker/setup-buildx-action@v2
 
