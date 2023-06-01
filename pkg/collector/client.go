@@ -1,8 +1,8 @@
 package collector
 
 import (
-	"github.com/hikhvar/ts3exporter/pkg/serverquery"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/wittdennis/ts3exporter/pkg/serverquery"
 )
 
 const clientSubsystem = "client"

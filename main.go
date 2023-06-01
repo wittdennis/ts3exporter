@@ -2,37 +2,32 @@ package main
 
 import (
 	"flag"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
-	"strings"
+	"strconv"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/hikhvar/ts3exporter/pkg/collector"
+	"github.com/wittdennis/ts3exporter/pkg/collector"
 
-	"github.com/hikhvar/ts3exporter/pkg/serverquery"
+	"github.com/wittdennis/ts3exporter/pkg/serverquery"
 )
 
 func main() {
-	remote := flag.String("remote", "localhost:10011", "remote address of server query port")
-	listen := flag.String("listen", ":9189", "listen address of the exporter")
-	user := flag.String("user", "serveradmin", "the serverquery user of the ts3exporter")
-	passwordFile := flag.String("passwordfile", "/etc/ts3exporter/password", "file containing the password. Must have 0600 permission. The file is not read if the environment variable SERVERQUERY_PASSWORD is set.")
-	enableChannelMetrics := flag.Bool("enablechannelmetrics", false, "Enables the channel collector.")
-	ignoreFloodLimits := flag.Bool("ignorefloodlimits", false, "Disable the server query flood limiter. Use this only if your exporter is whitelisted in the query_ip_whitelist.txt file.")
+	config := NewConfig()
+	setConfig(&config)
 
 	flag.Parse()
-	c, err := serverquery.NewClient(*remote, *user, mustReadPassword(*passwordFile), *ignoreFloodLimits)
+	c, err := serverquery.NewClient(config.Remote, config.User, config.Password, config.IgnoreFloodLimits)
 	if err != nil {
 		log.Fatalf("failed to init client %v\n", err)
 	}
 	internalMetrics := collector.NewExporterMetrics()
 	seq := collector.SequentialCollector{collector.NewServerInfo(c, internalMetrics)}
 
-	if *enableChannelMetrics {
+	if config.EnableChannelMetrics {
 		cInfo := collector.NewChannel(c, internalMetrics)
 		seq = append(seq, cInfo)
 	}
@@ -41,28 +36,59 @@ func main() {
 	// The Handler function provides a default handler to expose metrics
 	// via an HTTP server. "/metrics" is the usual endpoint for that.
 	http.Handle("/metrics", promhttp.Handler())
-	log.Fatal(http.ListenAndServe(*listen, nil))
+	log.Fatal(http.ListenAndServe(config.ListenAddr, nil))
 }
 
-// mustReadPassword reads the password from the password file or the environment. The password file is only
-// used if the SERVERQUERY_PASSWORD environment variable is not set.
-// If the file read fails, this function terminates the process.
-func mustReadPassword(passwordFile string) string {
-	if pw, found := os.LookupEnv("SERVERQUERY_PASSWORD"); found {
-		return pw
-	}
-	fInfo, err := os.Stat(passwordFile)
-	if err != nil {
-		log.Fatalf("failed to get fileinfo of password file: %v\n", err)
-	}
-	if !(fInfo.Mode() == 0600 || fInfo.Mode() == 0400) {
-		log.Fatalf("password file permissions are to open. Have: %s, want at most: %o\n", fInfo.Mode().String(), 0600)
-	}
-	data, err := ioutil.ReadFile(passwordFile)
-	if err != nil {
-		log.Fatalf("failed to read password file: %v\n", err)
+func setConfig(config *Config) {
+	if remote, found := os.LookupEnv("REMOTE"); found {
+		config.Remote = remote
+	} else {
+		remoteFlag := flag.String("remote", "localhost:10011", "remote address of server query port")
+		config.Remote = *remoteFlag
 	}
 
-	// Trim possible line breaks that can be automatically added by e.g. vim
-	return strings.Trim(string(data), "\r\n")
+	if user, found := os.LookupEnv("SERVERQUERY_USER"); found {
+		config.User = user
+	} else {
+		userFlag := flag.String("user", "serveradmin", "the serverquery user of the ts3exporter")
+		config.User = *userFlag
+	}
+
+	if pw, found := os.LookupEnv("SERVERQUERY_PASSWORD"); found {
+		config.Password = pw
+	} else {
+		passwordFlag := flag.String("password", "", "The password for the serverquery user")
+		config.Password = *passwordFlag
+	}
+
+	if listen, found := os.LookupEnv("LISTEN_ADDRESS"); found {
+		config.ListenAddr = listen
+	} else {
+		listenFlag := flag.String("listen", "0.0.0.0:9189", "listen address of the exporter")
+		config.ListenAddr = *listenFlag
+	}
+
+	if enableChannelMetrics, found := os.LookupEnv("ENABLE_CHANNEL_METRICS"); found {
+		v, err := strconv.ParseBool(enableChannelMetrics)
+		if err != nil {
+			config.EnableChannelMetrics = false
+		} else {
+			config.EnableChannelMetrics = v
+		}
+	} else {
+		enableChannelMetricsFlag := flag.Bool("enablechannelmetrics", false, "Enables the channel collector.")
+		config.EnableChannelMetrics = *enableChannelMetricsFlag
+	}
+
+	if ignoreFloodLimits, found := os.LookupEnv("IGNORE_FLOOD_LIMITS"); found {
+		v, err := strconv.ParseBool(ignoreFloodLimits)
+		if err != nil {
+			config.IgnoreFloodLimits = false
+		} else {
+			config.IgnoreFloodLimits = v
+		}
+	} else {
+		ignoreFloodLimitsFlag := flag.Bool("ignorefloodlimits", false, "Disable the server query flood limiter. Use this only if your exporter is whitelisted in the query_ip_whitelist.txt file.")
+		config.IgnoreFloodLimits = *ignoreFloodLimitsFlag
+	}
 }
