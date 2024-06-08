@@ -3,7 +3,7 @@ module github.com/wittdennis/ts3exporter
 go 1.20
 
 require (
-	github.com/multiplay/go-ts3 v1.1.0
+	github.com/multiplay/go-ts3 v1.2.0
 	github.com/prometheus/client_golang v1.15.1
 	github.com/stretchr/testify v1.8.4
 )
