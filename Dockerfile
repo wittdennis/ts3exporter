@@ -8,7 +8,7 @@ RUN mkdir -p /rootfs/etc && \
     echo "nogroup:*:100:nobody" > /rootfs/etc/group && \
     echo "nobody:*:100:100:::" > /rootfs/etc/passwd
 
-FROM alpine:3.18.0 AS final
+FROM alpine:3.20.0 AS final
 COPY --from=build --chown=100:100 /rootfs /
 USER 100:100
 EXPOSE 9189/tcp
