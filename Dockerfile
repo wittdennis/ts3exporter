@@ -1,4 +1,4 @@
-FROM golang:1.20 AS build
+FROM golang:1.22 AS build
 ADD . /go/src/github.com/hikhvar/ts3exporter
 RUN cd /go/src/github.com/hikhvar/ts3exporter && \
     go get -d -v ./... && \
