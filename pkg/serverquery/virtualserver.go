@@ -20,6 +20,10 @@ type VirtualServer struct {
 	MaxUploadTotalBandwidth   float64         `sq:"virtualserver_max_upload_total_bandwidth"`
 	ClientsConnections        int             `sq:"virtualserver_client_connections"`
 	QueryClientsConnections   int             `sq:"virtualserver_queryclientsonline"`
+	TotalPacketLossControl    float64         `sq:"virtualserver_total_packetloss_control"`
+	TotalPacketLossKeepAlive  float64         `sq:"virtualserver_total_packetloss_keepalive"`
+	TotalPacketLossSpeech     float64         `sq:"virtualserver_total_packetloss_speech"`
+	TotalPacketLossTotal      float64         `sq:"virtualserver_total_packetloss_total"`
 
 	FileTransferBytesSentTotal     int `sq:"connection_filetransfer_bytes_sent_total"`
 	FileTransferBytesReceivedTotal int `sq:"connection_filetransfer_bytes_received_total"`

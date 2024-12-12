@@ -25,6 +25,10 @@ type ServerInfo struct {
 	MaxUploadTotalBandwidth   *prometheus.Desc
 	ClientsConnections        *prometheus.Desc
 	QueryClientsConnections   *prometheus.Desc
+	TotalPacketLossControl    *prometheus.Desc
+	TotalPacketLossKeepAlive  *prometheus.Desc
+	TotalPacketLossSpeech     *prometheus.Desc
+	TotalPacketLossTotal      *prometheus.Desc
 
 	FileTransferBytesSentTotal     *prometheus.Desc
 	FileTransferBytesReceivedTotal *prometheus.Desc
@@ -66,6 +70,10 @@ func NewServerInfo(executor serverquery.Executor, internalMetrics *ExporterMetri
 		KeepAliveBytesReceivedTotal:    prometheus.NewDesc(fqdn(serverInfoSubsystem, "keepalive_bytes_received_total"), "total received bytes for keepalive traffic", serverInfoLabels, nil),
 		BytesSendTotal:                 prometheus.NewDesc(fqdn(serverInfoSubsystem, "bytes_send_total"), "total send bytes", serverInfoLabels, nil),
 		BytesReceivedTotal:             prometheus.NewDesc(fqdn(serverInfoSubsystem, "bytes_received_total"), "total received bytes", serverInfoLabels, nil),
+		TotalPacketLossControl:         prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_control"), "average packet loss for control data", serverInfoLabels, nil),
+		TotalPacketLossKeepAlive:       prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_keepalive"), "average packet loss for keepalive data", serverInfoLabels, nil),
+		TotalPacketLossSpeech:          prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_speech"), "average packet loss for speech data", serverInfoLabels, nil),
+		TotalPacketLossTotal:           prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_total"), "average packet loss for all data", serverInfoLabels, nil),
 	}
 
 }
@@ -101,6 +109,10 @@ func (s *ServerInfo) Collect(c chan<- prometheus.Metric) {
 		c <- prometheus.MustNewConstMetric(s.KeepAliveBytesReceivedTotal, prometheus.CounterValue, float64(vs.KeepAliveBytesReceivedTotal), vs.Name)
 		c <- prometheus.MustNewConstMetric(s.BytesSendTotal, prometheus.CounterValue, float64(vs.BytesSendTotal), vs.Name)
 		c <- prometheus.MustNewConstMetric(s.BytesReceivedTotal, prometheus.CounterValue, float64(vs.BytesReceivedTotal), vs.Name)
+		c <- prometheus.MustNewConstMetric(s.TotalPacketLossControl, prometheus.GaugeValue, float64(vs.TotalPacketLossControl), vs.Name)
+		c <- prometheus.MustNewConstMetric(s.TotalPacketLossKeepAlive, prometheus.GaugeValue, float64(vs.TotalPacketLossKeepAlive), vs.Name)
+		c <- prometheus.MustNewConstMetric(s.TotalPacketLossSpeech, prometheus.GaugeValue, float64(vs.TotalPacketLossSpeech), vs.Name)
+		c <- prometheus.MustNewConstMetric(s.TotalPacketLossTotal, prometheus.GaugeValue, float64(vs.TotalPacketLossTotal), vs.Name)
 	}
 }
 
