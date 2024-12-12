@@ -352,6 +352,18 @@ ts3_serverinfo_speech_bytes_sent_total{virtualserver="Gute Stube"} 1.09505883e+0
 # HELP ts3_serverinfo_uptime uptime of the virtual server
 # TYPE ts3_serverinfo_uptime counter
 ts3_serverinfo_uptime{virtualserver="Gute Stube"} 1.584554e+06
+# HELP ts3_serverinfo_total_packetloss_control average packet loss for control data
+# TYPE ts3_serverinfo_total_packetloss_control gauge
+ts3_serverinfo_total_packetloss_control{virtualserver="Gute Stube"} 0
+# HELP ts3_serverinfo_total_packetloss_keepalive average packet loss for keepalive data
+# TYPE ts3_serverinfo_total_packetloss_keepalive gauge
+ts3_serverinfo_total_packetloss_keepalive{virtualserver="Gute Stube"} 0.0144
+# HELP ts3_serverinfo_total_packetloss_speech average packet loss for speech data
+# TYPE ts3_serverinfo_total_packetloss_speech gauge
+ts3_serverinfo_total_packetloss_speech{virtualserver="Gute Stube"} 0
+# HELP ts3_serverinfo_total_packetloss_total average packet loss for all data
+# TYPE ts3_serverinfo_total_packetloss_total gauge
+ts3_serverinfo_total_packetloss_total{virtualserver="Gute Stube"} 0.0139
 ```
 
 Dashboard:
