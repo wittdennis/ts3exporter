@@ -1,6 +1,6 @@
 # TS3 Exporter
 
-[![tests](https://github.com/wittdennis/ts3exporter/actions/workflows/tests.yml/badge.svg)](https://github.com/wittdennis/ts3exporter/actions/workflows/tests.yml) [![release](https://github.com/wittdennis/ts3exporter/actions/workflows/release.yml/badge.svg)](https://github.com/wittdennis/ts3exporter/actions/workflows/release.yml)
+[![tests](https://github.com/wittdennis/ts3exporter/actions/workflows/tests.yaml/badge.svg)](https://github.com/wittdennis/ts3exporter/actions/workflows/tests.yaml) [![release](https://github.com/wittdennis/ts3exporter/actions/workflows/release.yaml/badge.svg)](https://github.com/wittdennis/ts3exporter/actions/workflows/release.yaml)
 
 This exporter uses the server query protocol to provide prometheus metrics.
 
