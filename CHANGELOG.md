@@ -1,34 +1,6 @@
 # Changelog
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-- - -
-## [1.1.1](https://github.com/wittdennis/ts3exporter/compare/9734eef23bcb0a623e1ab984a60b0034e1bbbab5..1.1.1) - 2025-01-07
-#### Bug Fixes
-- **(deps)** update alpine docker tag to v3.21.1 - ([af7709c](https://github.com/wittdennis/ts3exporter/commit/af7709c7b488f148f28a11f43c55e8f551abbc35)) - wittdennis-renovate[bot]
-#### Continuous Integration
-- **(deps)** update oknozor/cocogitto-action action to v3.9 - ([2673094](https://github.com/wittdennis/ts3exporter/commit/2673094abb89b1a4367066ce592fd572bf788a24)) - wittdennis-renovate[bot]
-- **(deps)** update softprops/action-gh-release action to v2.2.0 - ([e091e18](https://github.com/wittdennis/ts3exporter/commit/e091e1823ede240352bd6da83f9dcb9799e41237)) - wittdennis-renovate[bot]
-- **(deps)** update dependency ubuntu to v24 - ([b80b90a](https://github.com/wittdennis/ts3exporter/commit/b80b90a525237e711c69f1240b620f30ddaea034)) - wittdennis-renovate[bot]
-#### Miscellaneous Chores
-- **(version)** 1.1.1 - ([8b52d6f](https://github.com/wittdennis/ts3exporter/commit/8b52d6f81f063db206a9890629990391f881d262)) - github-actions
-- set renovate updates to use fix commit type - ([272003b](https://github.com/wittdennis/ts3exporter/commit/272003b06598f30ce919858c7f496807246ef62f)) - Dennis Witt
-- use .yaml for files instead of .yml - ([9734eef](https://github.com/wittdennis/ts3exporter/commit/9734eef23bcb0a623e1ab984a60b0034e1bbbab5)) - Dennis Witt
-
-- - -
-
-## [1.1.1](https://github.com/wittdennis/ts3exporter/compare/9734eef23bcb0a623e1ab984a60b0034e1bbbab5..1.1.1) - 2025-01-07
-#### Bug Fixes
-- **(deps)** update alpine docker tag to v3.21.1 - ([af7709c](https://github.com/wittdennis/ts3exporter/commit/af7709c7b488f148f28a11f43c55e8f551abbc35)) - wittdennis-renovate[bot]
-#### Continuous Integration
-- **(deps)** update oknozor/cocogitto-action action to v3.9 - ([2673094](https://github.com/wittdennis/ts3exporter/commit/2673094abb89b1a4367066ce592fd572bf788a24)) - wittdennis-renovate[bot]
-- **(deps)** update softprops/action-gh-release action to v2.2.0 - ([e091e18](https://github.com/wittdennis/ts3exporter/commit/e091e1823ede240352bd6da83f9dcb9799e41237)) - wittdennis-renovate[bot]
-- **(deps)** update dependency ubuntu to v24 - ([b80b90a](https://github.com/wittdennis/ts3exporter/commit/b80b90a525237e711c69f1240b620f30ddaea034)) - wittdennis-renovate[bot]
-#### Miscellaneous Chores
-- set renovate updates to use fix commit type - ([272003b](https://github.com/wittdennis/ts3exporter/commit/272003b06598f30ce919858c7f496807246ef62f)) - Dennis Witt
-- use .yaml for files instead of .yml - ([9734eef](https://github.com/wittdennis/ts3exporter/commit/9734eef23bcb0a623e1ab984a60b0034e1bbbab5)) - Dennis Witt
-
-- - -
-
 ## [1.1.0](https://github.com/wittdennis/ts3exporter/compare/72964826154cdf2148868d2004c1e235ebcb6aa5..1.1.0) - 2024-12-16
 #### Continuous Integration
 - versioning with cocogitto - ([4ab28f1](https://github.com/wittdennis/ts3exporter/commit/4ab28f111b8097799813b0c0610ef747de36718e)) - Dennis Witt
