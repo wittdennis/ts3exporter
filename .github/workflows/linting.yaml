@@ -1,18 +1,9 @@
+name: go-lint
+
 on: [pull_request]
-name: linting
+
 jobs:
-  linting:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - uses: actions/setup-go@v5
-        with:
-          go-version: "1.23.x"
-          cache: false
-
-      - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v6
-        with:
-          version: latest
+  lint:
+    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@1.8.0
+    with:
+      go-version: "1.23.x"
