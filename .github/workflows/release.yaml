@@ -4,51 +4,31 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
+  get-version:
     runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.release.outputs.version }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.RELEASE_TOKEN }}
-
-      - name: setup git config
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v6.1.0
-        with:
-          install-only: true
-          distribution: goreleaser
-          version: latest
-
       - name: bump version
         id: release
-        uses: oknozor/cocogitto-action@v3.9
+        uses: oknozor/cocogitto-action@v3.10
         with:
-          release: true
-          git-user: github-actions
-          git-user-email: github-actions@github.com
           check-latest-tag-only: true
+          dry-run: true
 
-      - name: generate changelog
-        run: cog changelog --at ${{ steps.release.outputs.version }} > GITHUB_CHANGELOG.md
-
-      - uses: softprops/action-gh-release@v2.2.1
-        name: create release
-        with:
-          body_path: GITHUB_CHANGELOG.md
-          tag_name: ${{ steps.release.outputs.version }}
-          token: ${{ secrets.RELEASE_TOKEN }}
-          files: |
-            dist/ts3exporter_${{ steps.release.outputs.version }}_checksums.txt
-            dist/ts3exporter_${{ steps.release.outputs.version }}_darwin_amd64.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_darwin_arm64.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_linux_386.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_linux_amd64.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_linux_arm64.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_windows_386.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_windows_amd64.tar.gz
-            dist/ts3exporter_${{ steps.release.outputs.version }}_windows_arm64.tar.gz
+  release:
+    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@1.8.0
+    with:
+      check-latest-tag-only: true
+      release-files: |
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_checksums.txt
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_darwin_amd64.tar.gz
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_darwin_arm64.tar.gz
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_linux_386.tar.gz
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_linux_amd64.tar.gz
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_linux_arm64.tar.gz
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_windows_386.tar.gz
+        dist/ts3exporter_${{ needs.get-version.outputs.version }}_windows_amd64.tar.gz
+    secrets:
+      release-token: ${{ secrets.RELEASE_TOKEN }}
+    needs: get-version
