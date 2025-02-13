@@ -9,6 +9,10 @@ jobs:
     outputs:
       version: ${{ steps.release.outputs.version }}
     steps:
+      - uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
       - name: bump version
         id: release
         uses: oknozor/cocogitto-action@v3.10

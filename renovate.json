@@ -6,8 +6,9 @@
   ],
   "packageRules": [
     {
-      "matchDepNames": ["oknozor/cocogitto-action"],
-      "automerge": true
+      "matchDepNames": ["oknozor/cocogitto-action", "actions/checkout"],
+      "automerge": true,
+      "semanticCommitType": "ci"
     },
     {
       "matchDepNames": ["golangci/golangci-lint"],
