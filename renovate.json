@@ -8,6 +8,11 @@
     {
       "matchDepNames": ["oknozor/cocogitto-action"],
       "automerge": true
+    },
+    {
+      "matchDepNames": ["golangci/golangci-lint"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
     }
   ]
 }
