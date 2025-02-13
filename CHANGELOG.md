@@ -27,6 +27,19 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.1.3](https://github.com/wittdennis/ts3exporter/compare/dbba79ef3299f8b387bec76c4ae93380b0cf84fb..1.1.3) - 2025-02-13
+#### Bug Fixes
+- **(deps)** update golang docker tag to v1.24 - ([3604444](https://github.com/wittdennis/ts3exporter/commit/36044448dbf624994cb8c0b8e05be0351bab4b33)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- **(deps)** update wittdennis/pipelines action to v1.8.1 - ([0040a52](https://github.com/wittdennis/ts3exporter/commit/0040a52ce1d7cc100d5f2acf0e7d5fd6d382d286)) - wittdennis-renovate[bot]
+- **(fix)** checkout for version dry-run - ([df3a25e](https://github.com/wittdennis/ts3exporter/commit/df3a25e2c509610cd9aa0b28f556a9ef9997f492)) - Dennis Witt
+- set golangci version for lint - ([72dc3aa](https://github.com/wittdennis/ts3exporter/commit/72dc3aa3deb35afd256014573a6b3f133369f119)) - Dennis Witt
+- change to use reusable workflows - ([dbba79e](https://github.com/wittdennis/ts3exporter/commit/dbba79ef3299f8b387bec76c4ae93380b0cf84fb)) - Dennis Witt
+#### Miscellaneous Chores
+- use go1.24 - ([016f193](https://github.com/wittdennis/ts3exporter/commit/016f193a6dcfca225c6b89d538b2b7b7f3bf2bf8)) - Dennis Witt
+
+- - -
+
 ## [1.1.2](https://github.com/wittdennis/ts3exporter/compare/870fe8df3b888f018fcbf727176c1c9110fa7bc9..1.1.2) - 2025-01-09
 #### Bug Fixes
 - **(deps)** update alpine docker tag to v3.21.2 - ([63b1a41](https://github.com/wittdennis/ts3exporter/commit/63b1a4177429d3a760e7da1c659c3e0276fb8e79)) - wittdennis-renovate[bot]
