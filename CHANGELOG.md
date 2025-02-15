@@ -27,6 +27,15 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.1.4](https://github.com/wittdennis/ts3exporter/compare/822658e694b2b1b3aa82f33fe7fa3f518568b9cb..1.1.4) - 2025-02-15
+#### Bug Fixes
+- **(deps)** update alpine docker tag to v3.21.3 - ([e566997](https://github.com/wittdennis/ts3exporter/commit/e566997726fdff9c819758da33a024257b09c282)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v1.64.5 - ([822658e](https://github.com/wittdennis/ts3exporter/commit/822658e694b2b1b3aa82f33fe7fa3f518568b9cb)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- **(deps)** update wittdennis/pipelines action to v1.8.2 - ([3c91f08](https://github.com/wittdennis/ts3exporter/commit/3c91f08532ac7f4aedb3a3182b1b12080fe5d86c)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.1.3](https://github.com/wittdennis/ts3exporter/compare/dbba79ef3299f8b387bec76c4ae93380b0cf84fb..1.1.3) - 2025-02-13
 #### Bug Fixes
 - **(deps)** update golang docker tag to v1.24 - ([3604444](https://github.com/wittdennis/ts3exporter/commit/36044448dbf624994cb8c0b8e05be0351bab4b33)) - wittdennis-renovate[bot]
