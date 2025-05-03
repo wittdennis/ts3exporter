@@ -21,7 +21,7 @@ jobs:
           dry-run: true
 
   release:
-    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@1.11.16
+    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@1.11.17
     with:
       check-latest-tag-only: true
       release-files: |
