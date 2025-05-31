@@ -27,6 +27,25 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.1.7](https://github.com/wittdennis/ts3exporter/compare/b5b38a51db49013742d6eb11fb84bad3c68864f0..1.1.7) - 2025-05-31
+#### Bug Fixes
+- **(deps)** update alpine docker tag to v3.22.0 - ([48944a1](https://github.com/wittdennis/ts3exporter/commit/48944a1f19bf5adc992a795e1390d09379dd99d1)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.20 - ([ae4a43d](https://github.com/wittdennis/ts3exporter/commit/ae4a43d2ba8a9f91e4f7d39f21f63c4f178d36ff)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.19 - ([49e5786](https://github.com/wittdennis/ts3exporter/commit/49e57868d1824332e878df7d5c426c92af6d8a10)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.18 - ([7199f4b](https://github.com/wittdennis/ts3exporter/commit/7199f4bcd8e579dfd5e3749fddbdf4069132c3a2)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.1.6 - ([de8f0b4](https://github.com/wittdennis/ts3exporter/commit/de8f0b4ae70ac0175ff359e7c02a1cd05dde750b)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.17 - ([b6a736a](https://github.com/wittdennis/ts3exporter/commit/b6a736af4273d74577961961ae3c966d04b8bb89)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.16 - ([4a3776c](https://github.com/wittdennis/ts3exporter/commit/4a3776c2c171963bf409f3071958db5c442839c8)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.15 - ([d08b94f](https://github.com/wittdennis/ts3exporter/commit/d08b94f3f9a8e7b94d4be96d62f78cbfa08df81c)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.1.5 - ([42d4f15](https://github.com/wittdennis/ts3exporter/commit/42d4f15460896c4274902e431bbf116aadf3aff0)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.14 - ([8408ad9](https://github.com/wittdennis/ts3exporter/commit/8408ad9ba8ebf7a407bde3996c160b3608f43ecf)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.13 - ([44db173](https://github.com/wittdennis/ts3exporter/commit/44db173b2861cc0e0b3bec6d579fc707f1c7948b)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.1.2 - ([089be81](https://github.com/wittdennis/ts3exporter/commit/089be815ab6c1c00e900dcd9d7265f0cd36d4f5b)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.12 - ([27d56ec](https://github.com/wittdennis/ts3exporter/commit/27d56ecd8e8ac7c302a4a4a6efe3de0bf276b232)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.1.1 - ([b5b38a5](https://github.com/wittdennis/ts3exporter/commit/b5b38a51db49013742d6eb11fb84bad3c68864f0)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.1.6](https://github.com/wittdennis/ts3exporter/compare/c8615c956a540effa684f386726d1377cf70b23d..1.1.6) - 2025-04-08
 #### Bug Fixes
 - **(deps)** update module github.com/prometheus/client_golang to v1.22.0 - ([6d2b5b6](https://github.com/wittdennis/ts3exporter/commit/6d2b5b6071f1d45100abf881660709345eac75eb)) - wittdennis-renovate[bot]
