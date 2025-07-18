@@ -27,6 +27,20 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.1.8](https://github.com/wittdennis/ts3exporter/compare/99b3be0ce755533d2fb3d7953efa2abe98d6875a..1.1.8) - 2025-07-18
+#### Bug Fixes
+- **(deps)** update alpine docker tag to v3.22.1 - ([2537f3d](https://github.com/wittdennis/ts3exporter/commit/2537f3d5c7d9b26733850c11049b3c37b9690cfd)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.27 - ([93616b2](https://github.com/wittdennis/ts3exporter/commit/93616b23fe7e2f5da649da18bfdd5f1303cd1c65)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.26 - ([e66dc93](https://github.com/wittdennis/ts3exporter/commit/e66dc93dcc629da1b8dfc954c3f60fb830be71f2)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.2.2 - ([ffddfd8](https://github.com/wittdennis/ts3exporter/commit/ffddfd882a3fec2804fef5e9f0641f4eac8767b6)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.25 - ([b5cc80a](https://github.com/wittdennis/ts3exporter/commit/b5cc80ae151c483b97ce2b24131eb5287a1e4dea)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.2.1 - ([c0a47dc](https://github.com/wittdennis/ts3exporter/commit/c0a47dcc349c8fda96e873c94494fb6a461c1ffe)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.24 - ([a6eae14](https://github.com/wittdennis/ts3exporter/commit/a6eae143761f7ac8068bf380a98629d10840edb1)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.23 - ([445d6a9](https://github.com/wittdennis/ts3exporter/commit/445d6a93cab9b3f9db9a7b8c89a28ccc315ea1b4)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.22 - ([99b3be0](https://github.com/wittdennis/ts3exporter/commit/99b3be0ce755533d2fb3d7953efa2abe98d6875a)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.1.7](https://github.com/wittdennis/ts3exporter/compare/b5b38a51db49013742d6eb11fb84bad3c68864f0..1.1.7) - 2025-05-31
 #### Bug Fixes
 - **(deps)** update alpine docker tag to v3.22.0 - ([48944a1](https://github.com/wittdennis/ts3exporter/commit/48944a1f19bf5adc992a795e1390d09379dd99d1)) - wittdennis-renovate[bot]
