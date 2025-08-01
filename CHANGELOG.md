@@ -27,6 +27,15 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.1.9](https://github.com/wittdennis/ts3exporter/compare/396b23e651d41dc0a81fadd381f3d341dac4e74c..1.1.9) - 2025-08-01
+#### Bug Fixes
+- **(deps)** update module github.com/prometheus/client_golang to v1.23.0 - ([8e4062c](https://github.com/wittdennis/ts3exporter/commit/8e4062cd0f27b0b865e79b155a47a9e8c45e0325)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.29 - ([2a7f572](https://github.com/wittdennis/ts3exporter/commit/2a7f57218c62e122e437e17ca062bd1a88fb70af)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.28 - ([a44381f](https://github.com/wittdennis/ts3exporter/commit/a44381fc009b4cd132e06817200abfc5b9e3bc71)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.3.0 - ([396b23e](https://github.com/wittdennis/ts3exporter/commit/396b23e651d41dc0a81fadd381f3d341dac4e74c)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.1.8](https://github.com/wittdennis/ts3exporter/compare/99b3be0ce755533d2fb3d7953efa2abe98d6875a..1.1.8) - 2025-07-18
 #### Bug Fixes
 - **(deps)** update alpine docker tag to v3.22.1 - ([2537f3d](https://github.com/wittdennis/ts3exporter/commit/2537f3d5c7d9b26733850c11049b3c37b9690cfd)) - wittdennis-renovate[bot]
