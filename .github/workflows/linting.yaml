@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   lint:
-    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@1.11.31
+    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@1.11.32
     with:
       go-version: "1.24.x"
       golangci-version: "v2.3.1" # renovate: datasource=github-releases depName=golangci/golangci-lint versioning=semver
