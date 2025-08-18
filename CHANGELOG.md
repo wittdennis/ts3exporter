@@ -27,6 +27,24 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.0](https://github.com/wittdennis/ts3exporter/compare/c504fb6fdbb3e4bdd617b2eb8e7739a43e2f199a..1.2.0) - 2025-08-18
+#### Bug Fixes
+- **(deps)** update golang docker tag to v1.25 - ([f4adaae](https://github.com/wittdennis/ts3exporter/commit/f4adaae0821bc4a02d9454c9f6d2fb00823dbc7c)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.4.0 - ([19f7db2](https://github.com/wittdennis/ts3exporter/commit/19f7db2468e4ce7bb351a0bb0b67e5b8eaba38ae)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.34 - ([a140a6c](https://github.com/wittdennis/ts3exporter/commit/a140a6c823903a3cf412025829115a99aa57ea6b)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.33 - ([1d68a1e](https://github.com/wittdennis/ts3exporter/commit/1d68a1e67d3612d927f70c6a6cb1d0fd0c6c94e8)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.32 - ([242c053](https://github.com/wittdennis/ts3exporter/commit/242c05336a6f383926164206807ba01992813379)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.31 - ([dbf208a](https://github.com/wittdennis/ts3exporter/commit/dbf208a6f852480dd144b82aefea9e2763fbf51a)) - wittdennis-renovate[bot]
+- **(deps)** update dependency golangci/golangci-lint to v2.3.1 - ([1ffab75](https://github.com/wittdennis/ts3exporter/commit/1ffab75b92e234cd5cde66aa11ec7acdbe17fb32)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.30 - ([c504fb6](https://github.com/wittdennis/ts3exporter/commit/c504fb6fdbb3e4bdd617b2eb8e7739a43e2f199a)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- **(deps)** update actions/checkout action to v5 - ([ba5c5c3](https://github.com/wittdennis/ts3exporter/commit/ba5c5c3b0a9378eec3a0376768a02a06eaa4c09c)) - wittdennis-renovate[bot]
+- **(deps)** update actions/checkout action to v4.3.0 - ([7830af5](https://github.com/wittdennis/ts3exporter/commit/7830af5f28c7371dfd1480a420aeb62dbbbfd919)) - wittdennis-renovate[bot]
+#### Features
+- go 1.25 support - ([77cf261](https://github.com/wittdennis/ts3exporter/commit/77cf261cbd476f2daf27908d740d20163ad532f2)) - Dennis Witt
+
+- - -
+
 ## [1.1.9](https://github.com/wittdennis/ts3exporter/compare/396b23e651d41dc0a81fadd381f3d341dac4e74c..1.1.9) - 2025-08-01
 #### Bug Fixes
 - **(deps)** update module github.com/prometheus/client_golang to v1.23.0 - ([8e4062c](https://github.com/wittdennis/ts3exporter/commit/8e4062cd0f27b0b865e79b155a47a9e8c45e0325)) - wittdennis-renovate[bot]
