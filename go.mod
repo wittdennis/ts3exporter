@@ -5,7 +5,7 @@ go 1.25
 require (
 	github.com/multiplay/go-ts3 v1.2.0
 	github.com/prometheus/client_golang v1.23.0
-	github.com/stretchr/testify v1.11.0
+	github.com/stretchr/testify v1.11.1
 )
 
 require (
