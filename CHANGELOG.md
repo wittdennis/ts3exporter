@@ -27,6 +27,17 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.1](https://github.com/wittdennis/ts3exporter/compare/b5203d9ce44bff2d684ebe7dc2132c4567f1851a..1.2.1) - 2025-09-05
+#### Bug Fixes
+- **(deps)** update actions/setup-go action to v6 - ([c67bf55](https://github.com/wittdennis/ts3exporter/commit/c67bf55a7a750b4d75efe3c68bdccef21f3a2562)) - wittdennis-renovate[bot]
+- **(deps)** update module github.com/prometheus/client_golang to v1.23.2 - ([af4ca2e](https://github.com/wittdennis/ts3exporter/commit/af4ca2e563a420de1f808b29e8c46c6c27d39584)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.36 - ([b072f8c](https://github.com/wittdennis/ts3exporter/commit/b072f8c682ad257fcd085bfc931c4f5d5448fc9d)) - wittdennis-renovate[bot]
+- **(deps)** update module github.com/stretchr/testify to v1.11.1 - ([08b22e9](https://github.com/wittdennis/ts3exporter/commit/08b22e9d083efb9167c795f45bca3f1c00d0b27e)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.35 - ([1892bb9](https://github.com/wittdennis/ts3exporter/commit/1892bb91b86d7f40b0bf5ddff1990ec1a6e0b624)) - wittdennis-renovate[bot]
+- **(deps)** update module github.com/stretchr/testify to v1.11.0 - ([b5203d9](https://github.com/wittdennis/ts3exporter/commit/b5203d9ce44bff2d684ebe7dc2132c4567f1851a)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.0](https://github.com/wittdennis/ts3exporter/compare/c504fb6fdbb3e4bdd617b2eb8e7739a43e2f199a..1.2.0) - 2025-08-18
 #### Bug Fixes
 - **(deps)** update golang docker tag to v1.25 - ([f4adaae](https://github.com/wittdennis/ts3exporter/commit/f4adaae0821bc4a02d9454c9f6d2fb00823dbc7c)) - wittdennis-renovate[bot]
