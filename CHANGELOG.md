@@ -27,6 +27,20 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.2](https://github.com/wittdennis/ts3exporter/compare/ab2cd714be45442b08d2b4898058e89a90a8c847..1.2.2) - 2025-10-10
+#### Bug Fixes
+- **(deps)** update alpine docker tag to v3.22.2 - ([59ab039](https://github.com/wittdennis/ts3exporter/commit/59ab039bdeeff83be72a2ca80cfad277abe1587a)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.46 - ([54485c5](https://github.com/wittdennis/ts3exporter/commit/54485c5a029e19f9d32ae33dd5f4dc0d3e0a4eb7)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.45 - ([56fbd75](https://github.com/wittdennis/ts3exporter/commit/56fbd7531387200cc36ed39edff4a75ad6fde8ae)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.44 - ([97063ec](https://github.com/wittdennis/ts3exporter/commit/97063ec007ee24233f7969aa3f44dd61e427e622)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.42 - ([713320c](https://github.com/wittdennis/ts3exporter/commit/713320c25bb56454e87680b43bd28406e35850f3)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.40 - ([7d28487](https://github.com/wittdennis/ts3exporter/commit/7d28487ae93ce10a4952ec5564760288bbb38d73)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.39 - ([c5d0c9d](https://github.com/wittdennis/ts3exporter/commit/c5d0c9d6561dee4c64dc6bc14ddcef45cc0ffea2)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.38 - ([c08851c](https://github.com/wittdennis/ts3exporter/commit/c08851cdac6894dbff91aca7cbc39e149d7f2822)) - wittdennis-renovate[bot]
+- **(deps)** update wittdennis/pipelines action to v1.11.37 - ([ab2cd71](https://github.com/wittdennis/ts3exporter/commit/ab2cd714be45442b08d2b4898058e89a90a8c847)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.1](https://github.com/wittdennis/ts3exporter/compare/b5203d9ce44bff2d684ebe7dc2132c4567f1851a..1.2.1) - 2025-09-05
 #### Bug Fixes
 - **(deps)** update actions/setup-go action to v6 - ([c67bf55](https://github.com/wittdennis/ts3exporter/commit/c67bf55a7a750b4d75efe3c68bdccef21f3a2562)) - wittdennis-renovate[bot]
