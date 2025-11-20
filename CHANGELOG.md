@@ -27,6 +27,23 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.3](https://github.com/wittdennis/ts3exporter/compare/bea4deeb10575e677ea6122a97488134428a6d58..1.2.3) - 2025-11-20
+#### Bug Fixes
+- (**deps**) update module golang.org/x/crypto to v0.45.0 [security] - ([7d0fb98](https://github.com/wittdennis/ts3exporter/commit/7d0fb98b6b745c97e4766c46034cbd52acd8dead)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.9 - ([24d0f0d](https://github.com/wittdennis/ts3exporter/commit/24d0f0d863f51585097c9018dfca2d7b67ab32dd)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.8 - ([acf19c3](https://github.com/wittdennis/ts3exporter/commit/acf19c3d614758eb7f5a0959aeb368be77209e84)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.7 - ([9f1ed3c](https://github.com/wittdennis/ts3exporter/commit/9f1ed3c3737f21169b48966bf526b2a8bf91245b)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.6 - ([6c9e6b9](https://github.com/wittdennis/ts3exporter/commit/6c9e6b93b48d7698897ae9664b1fcf91b6c58540)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.5 - ([45566a2](https://github.com/wittdennis/ts3exporter/commit/45566a237bea0fd6261f3a811cd7d3975444a775)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.4 - ([f1f4053](https://github.com/wittdennis/ts3exporter/commit/f1f4053950ca7d4d37c4d2945ac67497be16b115)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.3 - ([faa41d9](https://github.com/wittdennis/ts3exporter/commit/faa41d95afa17a96ef0ab69e2d5c5dc69db82c0e)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.2 - ([241a269](https://github.com/wittdennis/ts3exporter/commit/241a269ab4ad6ed1185f1f17c52ecfa0ee97c4a3)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.1 - ([bea4dee](https://github.com/wittdennis/ts3exporter/commit/bea4deeb10575e677ea6122a97488134428a6d58)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- (**deps**) update actions/checkout action to v5.0.1 - ([e433ca7](https://github.com/wittdennis/ts3exporter/commit/e433ca7930a11bd9f8d3b6f5ee8d2e88b88702fc)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.2](https://github.com/wittdennis/ts3exporter/compare/ab2cd714be45442b08d2b4898058e89a90a8c847..1.2.2) - 2025-10-10
 #### Bug Fixes
 - **(deps)** update alpine docker tag to v3.22.2 - ([59ab039](https://github.com/wittdennis/ts3exporter/commit/59ab039bdeeff83be72a2ca80cfad277abe1587a)) - wittdennis-renovate[bot]
