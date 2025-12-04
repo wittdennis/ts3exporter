@@ -27,6 +27,16 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.4](https://github.com/wittdennis/ts3exporter/compare/a5db17850c0382c6758991c5da4abddd38c00eb8..1.2.4) - 2025-12-04
+#### Bug Fixes
+- (**deps**) update alpine docker tag to v3.23.0 - ([139505d](https://github.com/wittdennis/ts3exporter/commit/139505d5aeddbffb95c9bf7d07f0db349c6d20ed)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.12.10 - ([3fcde8c](https://github.com/wittdennis/ts3exporter/commit/3fcde8cda0342771defcff694b4ed3f307263731)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- (**deps**) update actions/checkout action to v6.0.1 - ([ebdc1f2](https://github.com/wittdennis/ts3exporter/commit/ebdc1f25414ddeca464122a1890773ca74e03797)) - wittdennis-renovate[bot]
+- (**deps**) update actions/checkout action to v6 - ([a5db178](https://github.com/wittdennis/ts3exporter/commit/a5db17850c0382c6758991c5da4abddd38c00eb8)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.3](https://github.com/wittdennis/ts3exporter/compare/bea4deeb10575e677ea6122a97488134428a6d58..1.2.3) - 2025-11-20
 #### Bug Fixes
 - (**deps**) update module golang.org/x/crypto to v0.45.0 [security] - ([7d0fb98](https://github.com/wittdennis/ts3exporter/commit/7d0fb98b6b745c97e4766c46034cbd52acd8dead)) - wittdennis-renovate[bot]
