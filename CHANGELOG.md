@@ -27,6 +27,17 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.6](https://github.com/wittdennis/ts3exporter/compare/eda1baa4dbd3a56dd40455b72d292bb9a0edf454..1.2.6) - 2026-01-28
+#### Bug Fixes
+- (**deps**) update alpine docker tag to v3.23.3 - ([2ead4af](https://github.com/wittdennis/ts3exporter/commit/2ead4af21b625f58c26bdc659d323bc263b2cbc8)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.5 - ([671c5dd](https://github.com/wittdennis/ts3exporter/commit/671c5dda7ca1da2edf5c36488f2002e5c57dffb5)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.4 - ([f5ce393](https://github.com/wittdennis/ts3exporter/commit/f5ce393607d53dfab048295b1d49e13dfd497624)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.3 - ([eda1baa](https://github.com/wittdennis/ts3exporter/commit/eda1baa4dbd3a56dd40455b72d292bb9a0edf454)) - wittdennis-renovate[bot]
+#### Continuous Integration
+- (**deps**) update actions/checkout action to v6.0.2 - ([a1e8848](https://github.com/wittdennis/ts3exporter/commit/a1e884871dbc350b8babf606f8157761f1a8b1d5)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.5](https://github.com/wittdennis/ts3exporter/compare/88abf0428de21b6171c527c5e35aaaa555e70365..1.2.5) - 2025-12-18
 #### Bug Fixes
 - (**deps**) update alpine docker tag to v3.23.2 - ([a31aadc](https://github.com/wittdennis/ts3exporter/commit/a31aadccfb63c9b1fe9231185ec294b2df85cd35)) - wittdennis-renovate[bot]
