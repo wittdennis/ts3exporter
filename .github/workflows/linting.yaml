@@ -4,6 +4,6 @@ on: [pull_request]
 
 jobs:
   lint:
-    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@1.13.6
+    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@1.13.7
     with:
       go-version: "1.25.x"
