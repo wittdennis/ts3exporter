@@ -27,6 +27,16 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.7](https://github.com/wittdennis/ts3exporter/compare/138963da01391cd28f871bc6b6f073b56a7d3333..1.2.7) - 2026-02-13
+#### Bug Fixes
+- (**deps**) update golang docker tag to v1.26 - ([1fbcaf9](https://github.com/wittdennis/ts3exporter/commit/1fbcaf9875b77ba0ff05d8bf315a0be7fb9dde58)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.8 - ([111e30a](https://github.com/wittdennis/ts3exporter/commit/111e30afbe61b8a0c98b4e2f444d6672070650e2)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.7 - ([4785cb8](https://github.com/wittdennis/ts3exporter/commit/4785cb87a7c02c594b1306e40ddb9585be89f7b1)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.6 - ([138963d](https://github.com/wittdennis/ts3exporter/commit/138963da01391cd28f871bc6b6f073b56a7d3333)) - wittdennis-renovate[bot]
+- compile with golang 1.26 - ([a7e4527](https://github.com/wittdennis/ts3exporter/commit/a7e4527777927155ec0a82155c9d1d0001c9d77c)) - Dennis Witt
+
+- - -
+
 ## [1.2.6](https://github.com/wittdennis/ts3exporter/compare/eda1baa4dbd3a56dd40455b72d292bb9a0edf454..1.2.6) - 2026-01-28
 #### Bug Fixes
 - (**deps**) update alpine docker tag to v3.23.3 - ([2ead4af](https://github.com/wittdennis/ts3exporter/commit/2ead4af21b625f58c26bdc659d323bc263b2cbc8)) - wittdennis-renovate[bot]
