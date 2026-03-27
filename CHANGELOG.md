@@ -27,6 +27,32 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.8](https://github.com/wittdennis/ts3exporter/compare/cb5168ed685714cbdc34bb67d12acfca880f6d99..1.2.8) - 2026-03-27
+#### Bug Fixes
+- (**deps**) update wittdennis/pipelines action to v2 - ([7bcff30](https://github.com/wittdennis/ts3exporter/commit/7bcff305f282f2402e2ce9a8174cde5bdcdff1ef)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.26 - ([c0ff58e](https://github.com/wittdennis/ts3exporter/commit/c0ff58e07a3e809084c492366dc5bdc5b7573490)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.25 - ([bc83d9a](https://github.com/wittdennis/ts3exporter/commit/bc83d9a972c979bbbdfaff501eb9894400650ebb)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.24 - ([4849461](https://github.com/wittdennis/ts3exporter/commit/4849461400943fcf086b86a4fbaca9446d9ffb75)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.22 - ([f600aa9](https://github.com/wittdennis/ts3exporter/commit/f600aa9ded6bae6d80d9ace0e76a202822e0ded5)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.21 - ([6aba984](https://github.com/wittdennis/ts3exporter/commit/6aba9845b35b41437fe660450874cf4e5143af77)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.20 - ([33b72f1](https://github.com/wittdennis/ts3exporter/commit/33b72f1ff7adcbeed4e70fc62ac1447e4e4cd49d)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.19 - ([2875ffd](https://github.com/wittdennis/ts3exporter/commit/2875ffda25eaebe651c3ffe08be5c02a156a3de7)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.18 - ([a195efa](https://github.com/wittdennis/ts3exporter/commit/a195efaaad945c62bf3e2820892e886930678fcc)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.17 - ([1341319](https://github.com/wittdennis/ts3exporter/commit/134131938ca7fe34da5818d4de2d7970cb437087)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.16 - ([0cb4cf5](https://github.com/wittdennis/ts3exporter/commit/0cb4cf52046fe498209dfcd0edfebfd266660e53)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.14 - ([c10db1c](https://github.com/wittdennis/ts3exporter/commit/c10db1c0ee27fd31d3e2a3092c62b59e12b202bd)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.13 - ([4035c04](https://github.com/wittdennis/ts3exporter/commit/4035c0436f8bf2691b173dae3c0e39772cad2416)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.12 - ([71002f8](https://github.com/wittdennis/ts3exporter/commit/71002f828638d126b801da43a4780bdfd07282e6)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.11 - ([c406ddd](https://github.com/wittdennis/ts3exporter/commit/c406dddcb67b8c7ad73852db7ba2640e92a5d474)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.10 - ([1c15492](https://github.com/wittdennis/ts3exporter/commit/1c15492c270fa0f5af4a449e0aacafc08b849d81)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.9 - ([cb5168e](https://github.com/wittdennis/ts3exporter/commit/cb5168ed685714cbdc34bb67d12acfca880f6d99)) - wittdennis-renovate[bot]
+- publish to ghcr - ([3ffa0c6](https://github.com/wittdennis/ts3exporter/commit/3ffa0c639aadfcaff3342172bfd4bdadfd3d0271)) - Dennis Witt
+#### Continuous Integration
+- fix cocogitto action - ([f3eb62e](https://github.com/wittdennis/ts3exporter/commit/f3eb62eb2368ca7aebbf199a99c91e0ee3c8edbb)) - Dennis Witt
+- fix monorepo setting for cog - ([cae1a67](https://github.com/wittdennis/ts3exporter/commit/cae1a67e1e865dcdad48e4d5d7f93ce06bf1fc53)) - Dennis Witt
+
+- - -
+
 ## [1.2.7](https://github.com/wittdennis/ts3exporter/compare/138963da01391cd28f871bc6b6f073b56a7d3333..1.2.7) - 2026-02-13
 #### Bug Fixes
 - (**deps**) update golang docker tag to v1.26 - ([1fbcaf9](https://github.com/wittdennis/ts3exporter/commit/1fbcaf9875b77ba0ff05d8bf315a0be7fb9dde58)) - wittdennis-renovate[bot]
