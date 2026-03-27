@@ -1,13 +1,25 @@
 name: publish-image
 
 on:
+  workflow_dispatch:
   release:
     types: published
 
 jobs:
   publish:
     uses: wittdennis/pipelines/.github/workflows/container-image-publish.yaml@2.0.0
+    permissions:
+      packages: write
+      contents: read
     with:
       image-name: ts3exporter
+      registries: |
+        docker.io
+        ghcr.io
+      registry-namespaces: |
+        denniswitt
+        wittdennis
     secrets:
-      registry-password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+      registry-passwords: |
+        ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+        ${{ secrets.GITHUB_TOKEN }}
