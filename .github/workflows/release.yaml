@@ -15,10 +15,10 @@ jobs:
 
       - name: bump version
         id: release
-        uses: oknozor/cocogitto-action@v3.11
+        uses: cocogitto/cocogitto-action@v4.2.0
         with:
-          check-latest-tag-only: true
-          dry-run: true
+          command: bump
+          args: --auto --dry-run
 
   release:
     uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@2.0.0
