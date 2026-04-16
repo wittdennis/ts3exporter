@@ -27,6 +27,21 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.9](https://github.com/wittdennis/ts3exporter/compare/bbf9e20722d0cf8ce4e8f46b4f4df78137a9a651..1.2.9) - 2026-04-16
+#### Bug Fixes
+- (**deps**) update alpine docker tag to v3.23.4 - ([9fa1a04](https://github.com/wittdennis/ts3exporter/commit/9fa1a040289e41e8875ce409150b7619aec1714a)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.9 - ([112d4b2](https://github.com/wittdennis/ts3exporter/commit/112d4b2297145b9bdafe3f92fe07e48187a0cf53)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.8 - ([1669b3e](https://github.com/wittdennis/ts3exporter/commit/1669b3ed91e379053f17508cb0afbaab99265566)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.7 - ([cb0d383](https://github.com/wittdennis/ts3exporter/commit/cb0d38328e614e2b409cd760ded0adb27270b82f)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.6 - ([fb78a0c](https://github.com/wittdennis/ts3exporter/commit/fb78a0c4e10f290917db4eb156ed64bc6813dce1)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.5 - ([aeae4c7](https://github.com/wittdennis/ts3exporter/commit/aeae4c7670a4ec52d90ab39d6e940a842f526f60)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.4 - ([88700d9](https://github.com/wittdennis/ts3exporter/commit/88700d99228d4ef1e022f3e5f53ce866aa65f109)) - wittdennis-renovate[bot]
+- (**deps**) pin dependencies - ([fdfd7e0](https://github.com/wittdennis/ts3exporter/commit/fdfd7e0f0f3bfba62c44d517911f442bcfa51670)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.2 - ([083cda4](https://github.com/wittdennis/ts3exporter/commit/083cda42e248f7d6e1a341b126c2d02448df0b72)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.1 - ([bbf9e20](https://github.com/wittdennis/ts3exporter/commit/bbf9e20722d0cf8ce4e8f46b4f4df78137a9a651)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.8](https://github.com/wittdennis/ts3exporter/compare/cb5168ed685714cbdc34bb67d12acfca880f6d99..1.2.8) - 2026-03-27
 #### Bug Fixes
 - (**deps**) update wittdennis/pipelines action to v2 - ([7bcff30](https://github.com/wittdennis/ts3exporter/commit/7bcff305f282f2402e2ce9a8174cde5bdcdff1ef)) - wittdennis-renovate[bot]
