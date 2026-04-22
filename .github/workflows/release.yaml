@@ -13,12 +13,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: bump version
-        id: release
+      - name: install cocogitto
         uses: cocogitto/cocogitto-action@52d0023b4396897f1815648e553db2ab8d782f3a # v4.2.0
         with:
-          command: bump
-          args: --auto --dry-run
+          install-only: true
+
+      - name: determine next version
+        id: release
+        run: |
+          VERSION=$(cog bump --auto --dry-run)
+          echo "version=$VERSION" >>"$GITHUB_OUTPUT"
 
   release:
     uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@2340a9612d45cffe827e338bc55ae71fc72de9e8 # 2.0.11
