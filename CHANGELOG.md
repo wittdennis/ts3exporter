@@ -27,6 +27,15 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.10](https://github.com/wittdennis/ts3exporter/compare/974d42dce3d4e263723cb56e0fcf626ea313d353..1.2.10) - 2026-04-22
+#### Bug Fixes
+- (**ci**) binaries wouldn't be added to github release - ([860fe07](https://github.com/wittdennis/ts3exporter/commit/860fe07bcb722d96b88746936a5bfb7b0d21660a)) - Dennis Witt
+- (**deps**) update wittdennis/pipelines action to v2.0.11 - ([8f6e04a](https://github.com/wittdennis/ts3exporter/commit/8f6e04ade456df9c0baac800d6459fd580bf1d92)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.10 - ([30e069a](https://github.com/wittdennis/ts3exporter/commit/30e069a645e4fd5e693525d8cf7078224763f649)) - wittdennis-renovate[bot]
+- (**deps**) update dependency go to v1.26.2 - ([974d42d](https://github.com/wittdennis/ts3exporter/commit/974d42dce3d4e263723cb56e0fcf626ea313d353)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.9](https://github.com/wittdennis/ts3exporter/compare/bbf9e20722d0cf8ce4e8f46b4f4df78137a9a651..1.2.9) - 2026-04-16
 #### Bug Fixes
 - (**deps**) update alpine docker tag to v3.23.4 - ([9fa1a04](https://github.com/wittdennis/ts3exporter/commit/9fa1a040289e41e8875ce409150b7619aec1714a)) - wittdennis-renovate[bot]
