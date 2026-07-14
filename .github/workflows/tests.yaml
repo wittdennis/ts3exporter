@@ -4,7 +4,9 @@ jobs:
   test:
     strategy:
       matrix:
-        go-version: [1.26.x, 1.26.x]
+        go-version:
+          - "1.26.5" # renovate: datasource=github-tags depName=golang/go extractVersion=^go(?<version>.*)$ versioning=semver
+          - "1.26.5" # renovate: datasource=github-tags depName=golang/go extractVersion=^go(?<version>.*)$ versioning=semver
         platform: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.platform }}
     steps:
