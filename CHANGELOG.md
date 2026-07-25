@@ -27,6 +27,13 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.2.15](https://github.com/wittdennis/ts3exporter/compare/d6c80758469363bb59069b96bdc6dd76ff97e070..1.2.15) - 2026-07-25
+#### Bug Fixes
+- (**deps**) update module github.com/prometheus/client_golang to v1.24.1 - ([b4d1091](https://github.com/wittdennis/ts3exporter/commit/b4d10911f9a3894342cdb389b8191f8742ff27e6)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.39 - ([d6c8075](https://github.com/wittdennis/ts3exporter/commit/d6c80758469363bb59069b96bdc6dd76ff97e070)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.2.14](https://github.com/wittdennis/ts3exporter/compare/5a51f83cfed685515d8709ae4532b5832206c44c..1.2.14) - 2026-07-22
 #### Bug Fixes
 - (**deps**) update module github.com/prometheus/client_golang to v1.24.0 - ([5afaab3](https://github.com/wittdennis/ts3exporter/commit/5afaab34c0f7f4339c885ff6a32ea1e04997d859)) - wittdennis-renovate[bot]
