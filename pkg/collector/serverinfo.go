@@ -29,6 +29,7 @@ type ServerInfo struct {
 	TotalPacketLossKeepAlive  *prometheus.Desc
 	TotalPacketLossSpeech     *prometheus.Desc
 	TotalPacketLossTotal      *prometheus.Desc
+	TotalPing                 *prometheus.Desc
 
 	FileTransferBytesSentTotal     *prometheus.Desc
 	FileTransferBytesReceivedTotal *prometheus.Desc
@@ -74,6 +75,7 @@ func NewServerInfo(executor serverquery.Executor, internalMetrics *ExporterMetri
 		TotalPacketLossKeepAlive:       prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_keepalive"), "average packet loss for keepalive data", serverInfoLabels, nil),
 		TotalPacketLossSpeech:          prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_speech"), "average packet loss for speech data", serverInfoLabels, nil),
 		TotalPacketLossTotal:           prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_packetloss_total"), "average packet loss for all data", serverInfoLabels, nil),
+		TotalPing:                      prometheus.NewDesc(fqdn(serverInfoSubsystem, "total_ping"), "average ping of all clients", serverInfoLabels, nil),
 	}
 
 }
@@ -113,6 +115,7 @@ func (s *ServerInfo) Collect(c chan<- prometheus.Metric) {
 		c <- prometheus.MustNewConstMetric(s.TotalPacketLossKeepAlive, prometheus.GaugeValue, float64(vs.TotalPacketLossKeepAlive), vs.Name)
 		c <- prometheus.MustNewConstMetric(s.TotalPacketLossSpeech, prometheus.GaugeValue, float64(vs.TotalPacketLossSpeech), vs.Name)
 		c <- prometheus.MustNewConstMetric(s.TotalPacketLossTotal, prometheus.GaugeValue, float64(vs.TotalPacketLossTotal), vs.Name)
+		c <- prometheus.MustNewConstMetric(s.TotalPing, prometheus.GaugeValue, float64(vs.TotalPing), vs.Name)
 	}
 }
 

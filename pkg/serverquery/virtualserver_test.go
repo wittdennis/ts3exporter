@@ -33,6 +33,7 @@ func TestVirtualServerStructTags(t *testing.T) {
 		TotalPacketLossKeepAlive:       0.0001,
 		TotalPacketLossSpeech:          0.0034,
 		TotalPacketLossTotal:           0.0001,
+		TotalPing:                      0.0000,
 		FileTransferBytesSentTotal:     0,
 		FileTransferBytesReceivedTotal: 0,
 		ControlBytesSendTotal:          8189,
