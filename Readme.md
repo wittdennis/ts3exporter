@@ -364,6 +364,9 @@ ts3_serverinfo_total_packetloss_speech{virtualserver="Gute Stube"} 0
 # HELP ts3_serverinfo_total_packetloss_total average packet loss for all data
 # TYPE ts3_serverinfo_total_packetloss_total gauge
 ts3_serverinfo_total_packetloss_total{virtualserver="Gute Stube"} 0.0139
+# HELP ts3_serverinfo_total_ping average ping of all clients
+# TYPE ts3_serverinfo_total_ping gauge
+ts3_serverinfo_total_ping{virtualserver="Gute Stube"} 23
 ```
 
 Dashboard:

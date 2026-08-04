@@ -24,6 +24,7 @@ type VirtualServer struct {
 	TotalPacketLossKeepAlive  float64         `sq:"virtualserver_total_packetloss_keepalive"`
 	TotalPacketLossSpeech     float64         `sq:"virtualserver_total_packetloss_speech"`
 	TotalPacketLossTotal      float64         `sq:"virtualserver_total_packetloss_total"`
+	TotalPing                 float32         `sq:"virtualserver_total_ping"`
 
 	FileTransferBytesSentTotal     int `sq:"connection_filetransfer_bytes_sent_total"`
 	FileTransferBytesReceivedTotal int `sq:"connection_filetransfer_bytes_received_total"`
