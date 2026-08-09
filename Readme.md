@@ -34,7 +34,7 @@ Usage of /ts3exporter:
     	The serverquery user of the ts3exporter. (default "serveradmin")
 ```
 
-Every option can be configured by environment variables (note that environment variables take precedence over command-line flags):
+Every option can be configured by environment variables (note that command-line flags take precedence over environment variables):
 
 ```
 export ENABLE_CHANNEL_METRICS=0
