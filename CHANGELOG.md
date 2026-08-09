@@ -27,6 +27,15 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.1](https://github.com/wittdennis/ts3exporter/compare/9c6ccf289c5261fa971769f153848c66703c389c..1.3.1) - 2026-08-09
+#### Bug Fixes
+- prefer command-line flags over environment variables - ([171b396](https://github.com/wittdennis/ts3exporter/commit/171b396a5264193cf34ec8f0d8715a052f3bcdc2)) - Dennis Witt
+- command-line flags are not being read - ([9c6ccf2](https://github.com/wittdennis/ts3exporter/commit/9c6ccf289c5261fa971769f153848c66703c389c)) - Daniel Matsson
+#### Refactoring
+- config loading - ([b7e66f1](https://github.com/wittdennis/ts3exporter/commit/b7e66f156448f9757affb4078a79d3e50e672fec)) - Dennis Witt
+
+- - -
+
 ## [1.3.0](https://github.com/wittdennis/ts3exporter/compare/773be3967736a19693df6966337708e1e79a109d..1.3.0) - 2026-08-05
 #### Features
 - add VIRTUALSERVER_TOTAL_PING metric - ([3f49a19](https://github.com/wittdennis/ts3exporter/commit/3f49a1912f525aea9ab7623e08c11df979a19740)) - Daniel Matsson
