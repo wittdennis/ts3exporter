@@ -25,13 +25,13 @@ Usage of /ts3exporter:
   -ignorefloodlimits
     	Disable the server query flood limiter. Use this only if your exporter is whitelisted in the query_ip_whitelist.txt file.
   -listen string
-    	listen address of the exporter (default "0.0.0.0:9189")
+    	Listen address of the exporter. (default "0.0.0.0:9189")
   -password string
-    	The password for the serverquery user"
+    	The password for the serverquery user.
   -remote string
-    	remote address of server query port (default "localhost:10011")
+    	Remote address of server query port. (default "localhost:10011")
   -user string
-    	the serverquery user of the ts3exporter (default "serveradmin")
+    	The serverquery user of the ts3exporter. (default "serveradmin")
 ```
 
 Every option can be configured by environment variables (note that environment variables take precedence over command-line flags):
