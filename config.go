@@ -29,8 +29,8 @@ func NewConfig() Config {
 
 // loadConfig resolves the configuration in the following order, from highest to
 // lowest priority:
-//   - environment variables
 //   - command-line flags
+//   - environment variables
 //   - defaults from NewConfig
 //
 // The flag set, arguments and environment lookup are passed in so that the
@@ -38,8 +38,15 @@ func NewConfig() Config {
 func loadConfig(fs *flag.FlagSet, args []string, lookupEnv func(string) (string, bool)) (Config, error) {
 	config := NewConfig()
 
-	// Registering the defaults as flag defaults means an unset flag leaves the
-	// value untouched, so the environment can simply be layered on top.
+	envString(lookupEnv, "REMOTE", &config.Remote)
+	envString(lookupEnv, "SERVERQUERY_USER", &config.User)
+	envString(lookupEnv, "SERVERQUERY_PASSWORD", &config.Password)
+	envString(lookupEnv, "LISTEN_ADDRESS", &config.ListenAddr)
+	envBool(lookupEnv, "ENABLE_CHANNEL_METRICS", &config.EnableChannelMetrics)
+	envBool(lookupEnv, "IGNORE_FLOOD_LIMITS", &config.IgnoreFloodLimits)
+
+	// The already resolved values act as the flag defaults, so an unset flag
+	// keeps the environment value while an explicit flag overrides it.
 	fs.StringVar(&config.Remote, "remote", config.Remote, "Remote address of server query port.")
 	fs.StringVar(&config.User, "user", config.User, "The serverquery user of the ts3exporter.")
 	fs.StringVar(&config.Password, "password", config.Password, "The password for the serverquery user.")
@@ -50,13 +57,6 @@ func loadConfig(fs *flag.FlagSet, args []string, lookupEnv func(string) (string,
 	if err := fs.Parse(args); err != nil {
 		return config, err
 	}
-
-	envString(lookupEnv, "REMOTE", &config.Remote)
-	envString(lookupEnv, "SERVERQUERY_USER", &config.User)
-	envString(lookupEnv, "SERVERQUERY_PASSWORD", &config.Password)
-	envString(lookupEnv, "LISTEN_ADDRESS", &config.ListenAddr)
-	envBool(lookupEnv, "ENABLE_CHANNEL_METRICS", &config.EnableChannelMetrics)
-	envBool(lookupEnv, "IGNORE_FLOOD_LIMITS", &config.IgnoreFloodLimits)
 
 	return config, nil
 }

@@ -61,20 +61,30 @@ func TestLoadConfig(t *testing.T) {
 				IgnoreFloodLimits:    true,
 			},
 		},
-		"environment takes precedence over flags": {
-			args: []string{"-remote", "flag.example:10011", "-enablechannelmetrics"},
+		"flags take precedence over the environment": {
+			args: []string{"-remote", "flag.example:10011", "-enablechannelmetrics=false"},
 			env: map[string]string{
 				"REMOTE":                 "env.example:10011",
-				"ENABLE_CHANNEL_METRICS": "false",
+				"SERVERQUERY_USER":       "envuser",
+				"ENABLE_CHANNEL_METRICS": "true",
 			},
 			expected: Config{
-				Remote:               "env.example:10011",
+				Remote:               "flag.example:10011",
+				ListenAddr:           "0.0.0.0:9189",
+				User:                 "envuser",
+				EnableChannelMetrics: false,
+			},
+		},
+		"invalid boolean environment value falls back to the default": {
+			env: map[string]string{"ENABLE_CHANNEL_METRICS": "definitely"},
+			expected: Config{
+				Remote:               "localhost:10011",
 				ListenAddr:           "0.0.0.0:9189",
 				User:                 "serveradmin",
 				EnableChannelMetrics: false,
 			},
 		},
-		"invalid boolean environment value keeps the flag value": {
+		"invalid boolean environment value is still overridden by the flag": {
 			args: []string{"-enablechannelmetrics"},
 			env:  map[string]string{"ENABLE_CHANNEL_METRICS": "definitely"},
 			expected: Config{
