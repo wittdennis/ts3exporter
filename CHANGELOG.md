@@ -27,6 +27,17 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.2](https://github.com/wittdennis/ts3exporter/compare/42bceb98f36a9ec01a5cba59c5b552bfbd143b7e..1.3.2) - 2026-08-17
+#### Bug Fixes
+- (**deps**) update go module directive to v1.26.6 - ([86e3cb6](https://github.com/wittdennis/ts3exporter/commit/86e3cb6a8a4ad981c83cd5b2ee247136691d1e64)) - wittdennis-renovate[bot]
+- (**deps**) update module github.com/stretchr/testify to v1.12.0 - ([12b8aff](https://github.com/wittdennis/ts3exporter/commit/12b8aff64119d63f1546c6fbf6a9ec0386f46c09)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.44 - ([44b1b94](https://github.com/wittdennis/ts3exporter/commit/44b1b94057590ab5276011a4471cfa92b79c6e2b)) - wittdennis-renovate[bot]
+- (**deps**) update dependency golang/go to v1.26.6 - ([2ad9341](https://github.com/wittdennis/ts3exporter/commit/2ad9341277b42981d44652ea3b5cde541a34005b)) - wittdennis-renovate[bot]
+- (**deps**) update golang docker tag to v1.26.6 - ([63acb8e](https://github.com/wittdennis/ts3exporter/commit/63acb8e4bd1aa49b89fbd15de100bc36a5fb0b12)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.43 (#236) - ([42bceb9](https://github.com/wittdennis/ts3exporter/commit/42bceb98f36a9ec01a5cba59c5b552bfbd143b7e)) - wittdennis-renovate[bot], wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.1](https://github.com/wittdennis/ts3exporter/compare/9c6ccf289c5261fa971769f153848c66703c389c..1.3.1) - 2026-08-09
 #### Bug Fixes
 - prefer command-line flags over environment variables - ([171b396](https://github.com/wittdennis/ts3exporter/commit/171b396a5264193cf34ec8f0d8715a052f3bcdc2)) - Dennis Witt
