@@ -1,6 +1,6 @@
 module github.com/wittdennis/ts3exporter
 
-go 1.26.6
+go 1.26.7
 
 require (
 	github.com/multiplay/go-ts3 v1.2.0
