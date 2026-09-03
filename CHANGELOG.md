@@ -27,6 +27,19 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.4](https://github.com/wittdennis/ts3exporter/compare/68480607a366b301d74fea8dea75522a66c252b5..1.3.4) - 2026-09-03
+#### Bug Fixes
+- (**deps**) update go module directive to v1.27.1 - ([6dca806](https://github.com/wittdennis/ts3exporter/commit/6dca806e3710b4d4ce980d888259789afc9fe71f)) - wittdennis-renovate[bot]
+- (**deps**) update golang docker tag to v1.27.1 - ([c21b48b](https://github.com/wittdennis/ts3exporter/commit/c21b48b7ff3c3fea211b8df96ec0b8dd8d1c94f1)) - wittdennis-renovate[bot]
+- (**deps**) update dependency golang/go to v1.27.1 - ([a30d893](https://github.com/wittdennis/ts3exporter/commit/a30d893025d066566622342303eca00c594b5a61)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.52 - ([e2222b7](https://github.com/wittdennis/ts3exporter/commit/e2222b7a222886a3d0fa8c70c1a3587b88bd4f3f)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.50 - ([37f5b0f](https://github.com/wittdennis/ts3exporter/commit/37f5b0f68c7690bc04c54f2606236d60e66b3d95)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.49 - ([82eb820](https://github.com/wittdennis/ts3exporter/commit/82eb8201b520765c53fb054ffbe29c591dd1d2fa)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.48 - ([31ee20f](https://github.com/wittdennis/ts3exporter/commit/31ee20f47a974989acfb2d2966d21fbb4eb470dc)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.47 - ([6848060](https://github.com/wittdennis/ts3exporter/commit/68480607a366b301d74fea8dea75522a66c252b5)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.3](https://github.com/wittdennis/ts3exporter/compare/f7646deba08b0b45672b4f06a2736305aa6a7c20..1.3.3) - 2026-08-21
 #### Bug Fixes
 - (**deps**) update go module directive to v1.27.0 - ([150e906](https://github.com/wittdennis/ts3exporter/commit/150e9067356a9e1de81c993bfb0dd70c0f9b1094)) - wittdennis-renovate[bot]
