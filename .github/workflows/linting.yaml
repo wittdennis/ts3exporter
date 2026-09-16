@@ -4,6 +4,6 @@ on: [pull_request]
 
 jobs:
   lint:
-    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@956a18b30b1d66ffcfacf93b3fafcaacaf6f4eda # 2.0.54
+    uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@6fdf4c07c8d20759577bda84b9f93f133787eb53 # 2.0.56
     with:
       go-version: "1.27.1" # renovate: datasource=github-tags depName=golang/go extractVersion=^go(?<version>.*)$ versioning=semver
