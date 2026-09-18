@@ -27,6 +27,17 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.5](https://github.com/wittdennis/ts3exporter/compare/6bbeb9d45d68075f28292ddd5b3a7df2086e8180..1.3.5) - 2026-09-18
+#### Bug Fixes
+- (**deps**) update alpine docker tag to v3.24.2 - ([b5e9e3e](https://github.com/wittdennis/ts3exporter/commit/b5e9e3eaa572ab9e322ddeef5788ab229da66818)) - wittdennis-renovate[bot]
+- (**deps**) update dependency ubuntu to v26 - ([914b289](https://github.com/wittdennis/ts3exporter/commit/914b289f112c9c9161015eba615381c27f5dc31f)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.57 - ([d28742c](https://github.com/wittdennis/ts3exporter/commit/d28742c1eb2b1a2c3d3d58d8b94d46a3c9b1e399)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.56 - ([f751107](https://github.com/wittdennis/ts3exporter/commit/f751107c670620e75745474a65c7e49c0c8d22ba)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.54 - ([fc98b6c](https://github.com/wittdennis/ts3exporter/commit/fc98b6cbd7dd9ae6a95204a73eba75c6b70abefd)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.53 - ([6bbeb9d](https://github.com/wittdennis/ts3exporter/commit/6bbeb9d45d68075f28292ddd5b3a7df2086e8180)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.4](https://github.com/wittdennis/ts3exporter/compare/68480607a366b301d74fea8dea75522a66c252b5..1.3.4) - 2026-09-03
 #### Bug Fixes
 - (**deps**) update go module directive to v1.27.1 - ([6dca806](https://github.com/wittdennis/ts3exporter/commit/6dca806e3710b4d4ce980d888259789afc9fe71f)) - wittdennis-renovate[bot]
