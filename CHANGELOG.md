@@ -27,6 +27,19 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.6](https://github.com/wittdennis/ts3exporter/compare/36427ddb740afb034e5141e280ebe8cb1639e801..1.3.6) - 2026-10-11
+#### Bug Fixes
+- (**deps**) update module github.com/prometheus/client_golang to v1.25.0 - ([4f4ba07](https://github.com/wittdennis/ts3exporter/commit/4f4ba071286e5e100e53273d8abe3c9694ec1f60)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.62 - ([9c847b5](https://github.com/wittdennis/ts3exporter/commit/9c847b587d3eaf5c6ae3f07ba7521afff147259b)) - wittdennis-renovate[bot]
+- (**deps**) update go module directive to v1.27.2 - ([b29d9a5](https://github.com/wittdennis/ts3exporter/commit/b29d9a5eb99c7eca5111f2fd947077165160f1ca)) - wittdennis-renovate[bot]
+- (**deps**) update dependency golang/go to v1.27.2 - ([d7616ea](https://github.com/wittdennis/ts3exporter/commit/d7616ea02c7d7dadf17a1da4350312944ae66a29)) - wittdennis-renovate[bot]
+- (**deps**) update golang docker tag to v1.27.2 - ([560a156](https://github.com/wittdennis/ts3exporter/commit/560a156265850c324e21910a132575ce754dae74)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.61 - ([540dbb9](https://github.com/wittdennis/ts3exporter/commit/540dbb9f7cea185b83c8f26b301fc84e190bf3a4)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.60 - ([a29c00b](https://github.com/wittdennis/ts3exporter/commit/a29c00bc1754f989a17f38e3730385dfc9feca9c)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.59 - ([36427dd](https://github.com/wittdennis/ts3exporter/commit/36427ddb740afb034e5141e280ebe8cb1639e801)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.5](https://github.com/wittdennis/ts3exporter/compare/6bbeb9d45d68075f28292ddd5b3a7df2086e8180..1.3.5) - 2026-09-18
 #### Bug Fixes
 - (**deps**) update alpine docker tag to v3.24.2 - ([b5e9e3e](https://github.com/wittdennis/ts3exporter/commit/b5e9e3eaa572ab9e322ddeef5788ab229da66818)) - wittdennis-renovate[bot]
