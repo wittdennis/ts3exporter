@@ -25,7 +25,7 @@ jobs:
           echo "version=$VERSION" >>"$GITHUB_OUTPUT"
 
   release:
-    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@a2c78afd9bf38cc936d1e203e8349e7e0c15eff6 # 2.0.66
+    uses: wittdennis/pipelines/.github/workflows/cog-release.yaml@45b44512c56a34d80e131a061614b46fc8164e98 # 2.0.67
     with:
       check-latest-tag-only: true
       release-files: |
