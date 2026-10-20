@@ -27,6 +27,20 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.7](https://github.com/wittdennis/ts3exporter/compare/7a718b8a83022f9411c146c75695cb957b7c4bf4..1.3.7) - 2026-10-20
+#### Bug Fixes
+- (**deps**) update wittdennis/pipelines action to v2.0.68 - ([23883b3](https://github.com/wittdennis/ts3exporter/commit/23883b34f86c9f584e05c537bae88911f063347f)) - wittdennis-renovate[bot]
+- (**deps**) update go module directive to v1.27.3 - ([f41cd21](https://github.com/wittdennis/ts3exporter/commit/f41cd210342b15f28723a9723a5e52107369930e)) - wittdennis-renovate[bot]
+- (**deps**) update dependency golang/go to v1.27.3 - ([b43e59f](https://github.com/wittdennis/ts3exporter/commit/b43e59febcb0df77a8e35525055849e42bf68fa8)) - wittdennis-renovate[bot]
+- (**deps**) update golang docker tag to v1.27.3 - ([c4a3b32](https://github.com/wittdennis/ts3exporter/commit/c4a3b328ec91e1ab3d07b08e9ab831055ff8e7e3)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.67 - ([e732912](https://github.com/wittdennis/ts3exporter/commit/e73291201fb03df471730f2a49ea2e634d3164c0)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.66 - ([b6eb4c3](https://github.com/wittdennis/ts3exporter/commit/b6eb4c35bfe070a582dab9ff6496166d97aefd16)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.65 - ([8474eff](https://github.com/wittdennis/ts3exporter/commit/8474eff96453aec03d6383d2e2e9b1d0fda5b18e)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.64 - ([cb1f1c3](https://github.com/wittdennis/ts3exporter/commit/cb1f1c30a5e7ea2167abcab686875f8c92861a55)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v2.0.63 - ([7a718b8](https://github.com/wittdennis/ts3exporter/commit/7a718b8a83022f9411c146c75695cb957b7c4bf4)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.6](https://github.com/wittdennis/ts3exporter/compare/36427ddb740afb034e5141e280ebe8cb1639e801..1.3.6) - 2026-10-11
 #### Bug Fixes
 - (**deps**) update module github.com/prometheus/client_golang to v1.25.0 - ([4f4ba07](https://github.com/wittdennis/ts3exporter/commit/4f4ba071286e5e100e53273d8abe3c9694ec1f60)) - wittdennis-renovate[bot]
