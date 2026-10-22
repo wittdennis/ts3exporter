@@ -27,6 +27,12 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.8](https://github.com/wittdennis/ts3exporter/compare/b2c4819e00e16aaef99e63c88dacaa20b800ee81..1.3.8) - 2026-10-22
+#### Bug Fixes
+- (**deps**) update alpine docker tag to v3.24.3 - ([b2c4819](https://github.com/wittdennis/ts3exporter/commit/b2c4819e00e16aaef99e63c88dacaa20b800ee81)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.7](https://github.com/wittdennis/ts3exporter/compare/7a718b8a83022f9411c146c75695cb957b7c4bf4..1.3.7) - 2026-10-20
 #### Bug Fixes
 - (**deps**) update wittdennis/pipelines action to v2.0.68 - ([23883b3](https://github.com/wittdennis/ts3exporter/commit/23883b34f86c9f584e05c537bae88911f063347f)) - wittdennis-renovate[bot]
