@@ -27,6 +27,12 @@ All notable changes to this project will be documented in this file. See [conven
 - **(fix)** add new packet loss to test input - ([8ed6021](https://github.com/wittdennis/ts3exporter/commit/8ed60213d997ececfc573d0d6ea5dd788fdee73a)) - Dennis Witt
 
 - - -
+## [1.3.9](https://github.com/wittdennis/ts3exporter/compare/23573cfd346e6766c71dafb367bdbc4aab48c493..1.3.9) - 2026-10-27
+#### Bug Fixes
+- (**deps**) update module github.com/multiplay/go-ts3 to v1.3.0 - ([23573cf](https://github.com/wittdennis/ts3exporter/commit/23573cfd346e6766c71dafb367bdbc4aab48c493)) - wittdennis-renovate[bot]
+
+- - -
+
 ## [1.3.8](https://github.com/wittdennis/ts3exporter/compare/b2c4819e00e16aaef99e63c88dacaa20b800ee81..1.3.8) - 2026-10-22
 #### Bug Fixes
 - (**deps**) update alpine docker tag to v3.24.3 - ([b2c4819](https://github.com/wittdennis/ts3exporter/commit/b2c4819e00e16aaef99e63c88dacaa20b800ee81)) - wittdennis-renovate[bot]
