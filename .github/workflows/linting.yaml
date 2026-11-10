@@ -6,4 +6,4 @@ jobs:
   lint:
     uses: wittdennis/pipelines/.github/workflows/go-lint.yaml@109e4b79423ebe4dcdd02f6c981121c4308f99fb # 2.0.71
     with:
-      go-version: "1.27.3" # renovate: datasource=github-tags depName=golang/go extractVersion=^go(?<version>.*)$ versioning=semver
+      go-version: "1.27.4" # renovate: datasource=github-tags depName=golang/go extractVersion=^go(?<version>.*)$ versioning=semver
