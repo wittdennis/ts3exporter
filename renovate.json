@@ -9,6 +9,10 @@
       "matchDepNames": ["actions/checkout"],
       "automerge": true,
       "semanticCommitType": "ci"
+    },
+    {
+      "matchDepNames": ["go", "golang", "golang/go"],
+      "groupName": "go"
     }
   ]
 }
